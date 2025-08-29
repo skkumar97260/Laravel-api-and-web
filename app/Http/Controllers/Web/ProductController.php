@@ -11,6 +11,11 @@ class ProductController extends Controller
     public function index() {
         $products = Product::all();
         return view('products.index', compact('products'));
+        //     $products = Product::all();
+//     $users = User::all();
+                                       
+//     return view('products.index', compact('products', 'users')); // for frontend blade to pass full like post,get,update,delete( mulipile api like product, user, order)
+
     }
 
     public function create() {
